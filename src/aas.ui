@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AAS</class>
+ <widget class="QWidget" name="AAS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>80</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AAS (Academic Scheduling System)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/image/logoTest.ico</normaloff>:/image/logoTest.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#widget
+{
+	background-image: url(:/image/loginbackground.jpeg)
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,7">
+    <item>
+     <widget class="QWidget" name="widget_4" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">font: 700 16pt &quot;Microsoft YaHei UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>使用说明</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;更改teach.txt&lt;/p&gt;&lt;p&gt;修改内容中的老师和课程&lt;/p&gt;&lt;p&gt;寻找老师和课程的最佳匹配&lt;/p&gt;&lt;p&gt;基于Hopcroft-Karp算法&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="startButton">
+            <property name="minimumSize">
+             <size>
+              <width>82</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>启动</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QListView" name="courseView"/>
+          </item>
+          <item row="0" column="1">
+           <widget class="QListView" name="teacherView"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="loadButton">
+            <property name="minimumSize">
+             <size>
+              <width>82</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>导入</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0">
+       <item>
+        <widget class="QTableWidget" name="tableWidget"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">font: 700 16pt &quot;Microsoft YaHei UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>邻接矩阵</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listView"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 700 16pt &quot;Microsoft YaHei UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>匹配结果</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
