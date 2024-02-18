@@ -1,4 +1,4 @@
-# AAS-AcademicSchedulingSystem-NEU-DataStructureCourseDesign
+# AAS-Academic Scheduling System
 
 This is Academic Scheduling System
 
