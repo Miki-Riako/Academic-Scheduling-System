@@ -17,6 +17,7 @@ class AAS : public QWidget
 public:
     AAS(QWidget *parent = nullptr);
     ~AAS();
+    bool isOpened = false;
     bool BFS(void);
     bool DFS(int u);
     int HopcroftKarp(void);
